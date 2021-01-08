@@ -1,0 +1,94 @@
+MongoError: E11000 duplicate key error collection: wss.emails index: email_1 dup key: { : "asdasdasdasd@asdasdasd.asd" }
+    at Function.create (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/error.js:57:12)
+    at toError (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/utils.js:123:22)
+    at /home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/operations/common_functions.js:265:39
+    at handler (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/sdam/topology.js:942:24)
+    at /home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/connection_pool.js:350:13
+    at handleOperationResult (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/sdam/server.js:558:5)
+    at MessageStream.messageHandler (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/message_stream.js:144:12)
+    at MessageStream._write (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/message_stream.js:42:5)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at MessageStream.Writable.write (_stream_writable.js:303:10)
+    at Socket.ondata (_stream_readable.js:712:22)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:302:12)
+    at readableAddChunk (_stream_readable.js:278:9)
+
+MongoError: E11000 duplicate key error collection: wss.emails index: email_1 dup key: { : "begayi4697@izzum.com" }
+    at Function.create (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/error.js:57:12)
+    at toError (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/utils.js:123:22)
+    at /home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/operations/common_functions.js:265:39
+    at handler (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/sdam/topology.js:942:24)
+    at /home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/connection_pool.js:350:13
+    at handleOperationResult (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/sdam/server.js:558:5)
+    at MessageStream.messageHandler (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/message_stream.js:144:12)
+    at MessageStream._write (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/message_stream.js:42:5)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at MessageStream.Writable.write (_stream_writable.js:303:10)
+    at Socket.ondata (_stream_readable.js:712:22)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:302:12)
+    at readableAddChunk (_stream_readable.js:278:9)
+
+MongoError: E11000 duplicate key error collection: wss.emails index: email_1 dup key: { : "begayi4697@izzum.com" }
+    at Function.create (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/error.js:57:12)
+    at toError (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/utils.js:123:22)
+    at /home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/operations/common_functions.js:265:39
+    at handler (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/sdam/topology.js:942:24)
+    at /home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/connection_pool.js:350:13
+    at handleOperationResult (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/sdam/server.js:558:5)
+    at MessageStream.messageHandler (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/message_stream.js:144:12)
+    at MessageStream._write (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/message_stream.js:42:5)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at MessageStream.Writable.write (_stream_writable.js:303:10)
+    at Socket.ondata (_stream_readable.js:712:22)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:302:12)
+    at readableAddChunk (_stream_readable.js:278:9)
+
+MongoError: E11000 duplicate key error collection: wss.emails index: email_1 dup key: { : "begayi4697@izzum.com" }
+    at Function.create (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/error.js:57:12)
+    at toError (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/utils.js:123:22)
+    at /home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/operations/common_functions.js:265:39
+    at handler (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/sdam/topology.js:942:24)
+    at /home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/connection_pool.js:350:13
+    at handleOperationResult (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/sdam/server.js:558:5)
+    at MessageStream.messageHandler (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/message_stream.js:144:12)
+    at MessageStream._write (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/message_stream.js:42:5)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at MessageStream.Writable.write (_stream_writable.js:303:10)
+    at Socket.ondata (_stream_readable.js:712:22)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:302:12)
+    at readableAddChunk (_stream_readable.js:278:9)
+
+undefined
+
+MongoError: E11000 duplicate key error collection: wss.emails index: email_1 dup key: { : "lelixoy944@majorsww.com" }
+    at Function.create (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/error.js:57:12)
+    at toError (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/utils.js:123:22)
+    at /home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/operations/common_functions.js:265:39
+    at handler (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/sdam/topology.js:942:24)
+    at /home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/connection_pool.js:350:13
+    at handleOperationResult (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/core/sdam/server.js:558:5)
+    at MessageStream.messageHandler (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/message_stream.js:144:12)
+    at MessageStream._write (/home/crow/Dev/work/wss/email-verifier/node_modules/mongodb/lib/cmap/message_stream.js:42:5)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at MessageStream.Writable.write (_stream_writable.js:303:10)
+    at Socket.ondata (_stream_readable.js:712:22)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:302:12)
+    at readableAddChunk (_stream_readable.js:278:9)
+
+undefined
+

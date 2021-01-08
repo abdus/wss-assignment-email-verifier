@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Email Verifier</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Roboto, sans-serif;
+      }
+
+      form {
+        max-width: 20rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      form label {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        margin: 1rem 0;
+      }
+
+      input,
+      button {
+        padding: 0.4rem 1rem;
+        font: inherit;
+      }
+
+      #error {
+        background-color: #ffd6d6;
+        color: red;
+      }
+
+      #success {
+        background-color: #d7ffd6;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <form action_type="add_new">
+      <div id="error"></div>
+      <div id="success"></div>
+      <label>
+        <span>Enter your Email</span>
+        <input type="email" name="email" />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+    <script>
+      (async () => {
+        const email = document.querySelector("input");
+        const form = document.querySelector("form");
+        const errorDiv = document.querySelector("#error");
+        const successDiv = document.querySelector("#success");
+        const formButton = document.querySelector("button");
+        const codeInput = document.createElement("input");
+        const span = document.createElement("span");
+        const labelTag = document.createElement("label");
+
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          if (form.getAttribute("action_type") === "add_new") {
+            const resp__raw = await window.fetch("/api/submit", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ email: email.value }),
+            });
+
+            if (!resp__raw.ok) {
+              errorDiv.innerText = (await resp__raw.json()).error;
+              labelTag.remove();
+              email.removeAttribute("disabled");
+            } else {
+              const resp = await resp__raw.json();
+              if (resp.code === "EMAIL_VERIFIED") {
+                return (successDiv.innerText = "Email Already Verified");
+              }
+
+              form.removeChild(formButton);
+              email.setAttribute("disabled", true);
+              codeInput.type = "number";
+              codeInput.min = 1000;
+              codeInput.max = 9999;
+              span.innerText = "Code";
+              labelTag.appendChild(span);
+              labelTag.appendChild(codeInput);
+              form.appendChild(labelTag);
+              form.appendChild(formButton);
+              form.setAttribute("action_type", "verify");
+            }
+          } else if (form.getAttribute("action_type") === "verify") {
+            const resp__raw = await window.fetch("/api/verify", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                email: email.value,
+                code: parseInt(codeInput.value, 10),
+              }),
+            });
+
+            if (!resp__raw.ok) {
+              errorDiv.innerText = (await resp__raw.json()).error;
+            } else {
+              const resp = await resp__raw.json();
+
+              if (resp.code === "EMAIL_VERIFIED") {
+                return (successDiv.innerText = "Email Verified");
+              }
+            }
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
